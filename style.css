@@ -1,0 +1,13 @@
+/*
+Theme Name: Robin McClintock
+Theme URI: http://meshfresh.com
+Author: MESH Design & Development
+Author URI: http://meshfresh.com
+Description: CMS portfolio theme for Robin McClintock. Built, with love, but MESH
+Version: 0.1
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+@import url(assets/css/reset.css);
+@import url(assets/css/typography.css)
+@import url(assets/css/layout.css);
