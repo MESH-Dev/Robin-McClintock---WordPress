@@ -10,6 +10,7 @@ header{height:90px;width:100%;}
 
 /* Home */
 .work-row{height:296px;margin:0 0 6px;display:block;float:left;}
+	.work-link{float:left;display:block;}
 	.work-entry{float:left;display:inline-block;height:100%;position:relative;margin:0 2px;}
 		.work-image{height:100%;display:inline-block;padding:0;position:relative;z-index:1;}
 			.work-image > img{height:100%;width:auto;}
@@ -42,4 +43,41 @@ header{height:90px;width:100%;}
 	#scrollableArea:hover .scrollingHotSpotLeft,
 	#scrollableArea:hover .scrollingHotSpotRight{display:block !important;}
 
+
+/* Single-Work */
+#work-resp{width:810px;margin:0 auto;position:relative;}
+#work-single{width:100%;float:left;height:100%;overflow-x: hidden;height:750px;}
+	#work-single > .container{position:relative;z-index:2;height:600px;width:940px;}
+	#work-single .prev-arrow{position:absolute;top:50%;left:0;height:68px;width:30px;background:url(../img/arrows.png) 0 0 no-repeat;}
+	#work-single .next-arrow{position:absolute;top:50%;right:0;height:68px;width:30px;background:url(../img/arrows.png) -30px 0 no-repeat;}
+		#work-single .next-arrow:hover, #work-single .prev-arrow:hover{cursor:pointer;}
+
+	#work-slides{width:2430px;min-height:700px;float:left;position:absolute;z-index:1;left:-810px;}
+
+	#work-single #work-prev, #work-single #work-curr, #work-single #work-next{width:810px;float:left;}
+	#work-single #work-prev{}
+	#work-single #work-curr{}
+	#work-single #work-next{}
+
+	#work-single .work-single-image{height:100%;display:table;width:auto;margin:0 auto;}
+		.work-single-image img{max-width:100%;max-height:600px;height:auto;width:auto;}
+	#work-single .work-single-info{display:none;}
+		#work-single #work-curr .work-single-info{display:block;}
+		.work-single-info .work-single-title{font-weight: bold;font-size: 10px;text-transform: uppercase;margin: 7px 0 4px;display: block;}
+		.work-single-info .work-single-meta p{font-size: 10px;margin: 0;line-height: 14px;}
+
 /* Footer */
+footer{}
+	footer .gutter{padding:47px 35px;}
+	footer nav{}
+	footer nav ul{float: left;width: 64px;position: relative;height:81px;}
+	footer nav ul li{text-transform: uppercase;font-size: 12px;font-weight: bold;border: 2px solid #606478;float: left;display: block;clear: both;letter-spacing: 0.2em;}
+		footer nav ul li.work{}
+			footer nav ul li.work a{padding: 4px 3px 6px 9px;}
+		footer nav ul li.bio{position: absolute;top: 28px;right: -41px;}
+			footer nav ul li.bio a{padding: 3px 4px 4px 8px;}
+			footer nav ul li.bio:before{content: '';position: absolute;height: 105%;background: #606478;width: 2px;top: 0px;left: -35px;}
+		footer nav ul li.cv{position: absolute;bottom: 0;right: 1px;}
+			footer nav ul li.cv a{padding: 2px 4px 5px 6px;}
+	footer nav ul li a{color:#606478;display:block;}
+		footer nav ul li:hover a{color:#fff;background:#606478;}
