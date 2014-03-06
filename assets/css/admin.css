@@ -1,1 +1,4 @@
 #menu-posts-work .wp-menu-image:before{content: "\f161" !important;}
+
+.appearance_page_custom-header #headimg{background-repeat:no-repeat;}
+	.appearance_page_custom-header #headimg *{display:none;}
