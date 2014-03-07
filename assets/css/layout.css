@@ -1,14 +1,16 @@
 /* Common */
+html, body{height:100%;width:100%;}
 .container{width:1140px;margin:0 auto;}
 
 
 /* Header */
-header{height:90px;width:100%;}
+header{height:90px;width:100%;position:absolute;top:0;left:0;z-index:10000;}
 	header .gutter{padding:23px 76px 0 0;}
 	header #logo{float:right;}
 
 
 /* Home */
+#works {margin: 90px 0 0 0;}
 .work-row{height:296px;margin:0 0 6px;display:block;float:left;}
 	.work-link{float:left;display:block;}
 	.work-entry{float:left;display:inline-block;height:100%;position:relative;margin:0 2px;}
@@ -46,7 +48,7 @@ header{height:90px;width:100%;}
 
 /* Single-Work */
 #work-resp{width:810px;margin:0 auto;position:relative;}
-#work-single{width:100%;float:left;height:100%;overflow-x: hidden;height:750px;}
+#work-single{width:100%;float:left;height:100%;overflow-x: hidden;height:750px;padding:90px 0 0;}
 	#work-single > .container{position:relative;z-index:2;height:600px;width:940px;}
 	#work-single .prev-arrow{position:absolute;top:50%;left:0;height:68px;width:30px;background:url(../img/arrows.png) 0 0 no-repeat;}
 	#work-single .next-arrow{position:absolute;top:50%;right:0;height:68px;width:30px;background:url(../img/arrows.png) -30px 0 no-repeat;}
@@ -66,8 +68,23 @@ header{height:90px;width:100%;}
 		.work-single-info .work-single-title{font-weight: bold;font-size: 10px;text-transform: uppercase;margin: 7px 0 4px;display: block;}
 		.work-single-info .work-single-meta p{font-size: 10px;margin: 0;line-height: 14px;}
 
+
+/* Bio */
+section#bio{display: block;float: left;height: 100%;width: 100%;background-repeat: no-repeat;background-size: cover;min-height:650px;}
+	#bio #contentPrimary {margin: 145px auto 0;background: #fff;border: 4px solid #ffd881;width:660px;font-weight: bold;text-transform: uppercase;font-size: 10px;line-height: 20px;}
+	#bio #contentPrimary > div {padding: 39px 53px;}
+
+
+/* CV */
+section#cv{background:#ffd881;width:100%;float:left;padding:90px 0 0;text-transform:uppercase;font-size: 10px;}
+	section#cv .container > .gutter{padding:0 141px 30px 337px;}
+	section#cv #contentPrimary{float:left;width:400px;}
+
+	section#cv #contentSecondary{float:right;width:180px;}
+
+
 /* Footer */
-footer{}
+footer{position:fixed;bottom: 0;left: 0;width:100%;padding:0 0 30px;z-index:10000;}
 	footer .gutter{padding:47px 35px;}
 	footer nav{}
 	footer nav ul{float: left;width: 64px;position: relative;height:81px;}
@@ -80,4 +97,4 @@ footer{}
 		footer nav ul li.cv{position: absolute;bottom: 0;right: 1px;}
 			footer nav ul li.cv a{padding: 2px 4px 5px 6px;}
 	footer nav ul li a{color:#606478;display:block;}
-		footer nav ul li:hover a{color:#fff;background:#606478;}
+		footer nav ul li:hover a, footer nav ul li.current-menu-item a{color:#fff;background:#606478;}
